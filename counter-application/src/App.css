@@ -1,0 +1,115 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 20px;
+}
+
+.counter-card {
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  padding: 40px 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #252b48;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.count-display {
+  font-size: 75px;
+  font-weight: bold;
+  color: #667eea;
+  margin: 20px 0;
+}
+
+.message {
+  color: #e63946;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.success-message {
+  color: #16a34a;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.increment {
+  background: #16a34a;
+}
+
+.decrement {
+  background: #e63946;
+}
+
+.reset {
+  background: #667eea;
+}
+
+.footer {
+  color: #888;
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .counter-card {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
